@@ -10,7 +10,7 @@ var Countdown = React.createClass({
       <div className="row">
         <div className="columns small-6 large-4 small-centered columns">
           <p>COUNTDOWN</p>
-          <Clock />
+          <Clock totalSeconds={129}/>
           <Controls />
         </div>
       </div>
