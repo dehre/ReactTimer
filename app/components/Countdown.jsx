@@ -1,18 +1,31 @@
 var React = require('react');
 
 var Clock = require('Clock');
-var Controls = require('Controls');
+var CountdownForm = require('CountdownForm');
 
 var Countdown = React.createClass({
 
+  getInitialState: function(){
+    return {
+      count: 0
+    }
+  },
+
+  handleSetCountdown: function(seconds){
+    this.setState({
+      count: seconds
+    })
+  },
+
   render: function(){
+
+    var {count} = this.state;
+
     return(
-      <div className="row">
-        <div className="columns small-6 large-4 small-centered columns">
+      <div>
           <p>COUNTDOWN</p>
-          <Clock totalSeconds={129}/>
-          <Controls />
-        </div>
+          <Clock totalSeconds={count}/>
+          <CountdownForm onSetCountdown={this.handleSetCountdown}/>
       </div>
     )
   }
