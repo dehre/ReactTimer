@@ -17,14 +17,6 @@ var ControlsTimer = React.createClass({
 
     var {timerStatus} = this.props;
 
-    // var renderStartStopButton = () => {
-    //   if(timerStatus === 'started'){
-    //     return <button className="button secondary" onClick={this.onStatusChange('paused')}>Pause</button>
-    //   } else if (timerStatus === 'paused'){
-    //     return <button className="button primary" onClick={this.onStatusChange('started')}>Start</button>
-    //   }
-    // };
-
     var renderStartStopButton = () => {
       if(timerStatus === 'started'){
         return <button className="button secondary" onClick={this.onStatusChange('paused')}>Pause</button>
