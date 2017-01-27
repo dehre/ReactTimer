@@ -1,7 +1,7 @@
 var React = require('react');
 
 var Clock = require('Clock');
-var ControlsTimer = require('ControlsTimer');
+var Controls = require('Controls');
 
 var Timer = React.createClass({
 
@@ -58,7 +58,7 @@ var Timer = React.createClass({
       <div>
           <p>TIMER</p>
           <Clock totalSeconds={count}/>
-          <ControlsTimer timerStatus={timerStatus} onStatusChange={this.handleStatusChange}/>
+          <Controls countdownStatus={timerStatus} onStatusChange={this.handleStatusChange} timer={true}/>
       </div>
     )
   }
