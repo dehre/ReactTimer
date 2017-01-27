@@ -31,6 +31,7 @@ var config = {
       Clock: 'app/components/Clock.jsx',
       CountdownForm: 'app/components/CountdownForm.jsx',
       Controls: 'app/components/Controls.jsx',
+      ControlsTimer: 'app/components/ControlsTimer.jsx',
       applicationStyles: 'app/styles/app.scss'
     },
     extensions: ['','.js','.jsx']
